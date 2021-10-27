@@ -1,12 +1,16 @@
 *****targil 2:
     
-@@@exercize = input("please enter exercize: ")
-exercize.replace(' ','')
+exercize = input("please enter exercize: ")
 ls_ex = exercize.split()
-if ls_ex[0] + ls_ex[1] == ls_ex[2]:
+a = int(ls_ex[0].replace(' ',''))
+b = int(ls_ex[2].replace(' ',''))
+c = int(ls_ex[4].replace(' ',''))
+
+if a + b == c:
     print("TRUE")
 else:
     print("FALSE")
+
     
 
 
@@ -129,9 +133,12 @@ print(ls[-1])
 
 *****targil 11:
     
- @@@main_ls = [[4,8,200],[4,3000,-1],[5,87,12]]
- min = main_ls[0]
- for i in range(len(main_ls)):
+main_ls = [[4, 8, 200], [4, 3000, -1], [5, 87, 12]]
+min_val = main_ls[0][0]
+
+for i in range(len(main_ls)):
     for j in main_ls[i]:
-        if min < i[j]
-        print(min)   
+        if j < min_val:
+            min_val = j
+
+print(min_val)
