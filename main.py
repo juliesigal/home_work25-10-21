@@ -2,9 +2,9 @@
     
 exercize = input("please enter exercize: ")
 ls_ex = exercize.split()
-a = int(ls_ex[0].replace(' ',''))
-b = int(ls_ex[2].replace(' ',''))
-c = int(ls_ex[4].replace(' ',''))
+a = int(ls_ex[0])
+b = int(ls_ex[2])
+c = int(ls_ex[4])
 
 if a + b == c:
     print("TRUE")
